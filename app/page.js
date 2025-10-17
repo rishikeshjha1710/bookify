@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 // --- DATA & CONFIGURATION ---
 
 const PAYMENT_URL = "https://rzp.io/rzp/To6NQitn";
@@ -10,12 +10,12 @@ const testimonials = [
     {
         name: "Rahul S.",
         role: "Software Architect",
-        quote: "This book isn't theory; it's a financial operating system update. My entire approach to money shifted from scarcity to abundance. Highly recommended.",
+        quote: "This book isn&apos;t theory; it&apos;s a financial operating system update. My entire approach to money shifted from scarcity to abundance. Highly recommended.",
     },
     {
         name: "Priya M.",
         role: "E-commerce Founder",
-        quote: "I finally understood the 'why' behind my money habits. Mr. X's 'Code' is the simplest, most direct blueprint for building sustainable wealth I've ever read.",
+        quote: "I finally understood the &apos;why&apos; behind my money habits. Mr. X&apos;s &quot;Code&quot; is the simplest, most direct blueprint for building sustainable wealth I&apos;ve ever read.",
     },
 ];
 
@@ -93,19 +93,19 @@ const ServiceCard = ({ title, description, icon }) => (
 // Icon components (for Services)
 const BookOpenIcon = () => (
     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13M12 10.253c-4.97 0-9 1.13-9 2.5s4.03 2.5 9 2.5 9-1.13 9-2.5-4.03-2.5-9-2.5zM3 13.253C3 14.623 7.03 15.753 12 15.753s9-1.13 9-2.5M3 17.253C3 18.623 7.03 19.753 12 19.753s9-1.13 9-2.5"/>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13M12 10.253c-4.97 0-9 1.13-9 2.5s4.03 2.5 9 2.5 9-1.13 9-2.5-4.03-2.5-9-2.5zM3 13.253C3 14.623 7.03 15.753 12 15.753s9-1.13 9-2.5M3 17.253C3 18.623 7.03 19.753 12 19.753s9-1.13 9-2.5" />
     </svg>
 );
 const BrainIcon = () => (
     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19V6l-2-2H4a1 1 0 00-1 1v14a1 1 0 001 1h16a1 1 0 001-1V6a1 1 0 00-1-1h-3l-2 2v13"/>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 9h2M16 13h2M16 17h2"/>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19V6l-2-2H4a1 1 0 00-1 1v14a1 1 0 001 1h16a1 1 0 001-1V6a1 1 0 00-1-1h-3l-2 2v13" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 9h2M16 13h2M16 17h2" />
     </svg>
 );
 const UpdateIcon = () => (
     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.962 8.962 0 0120 12a9 9 0 01-18 0M12 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 4v5h-5"/>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.962 8.962 0 0120 12a9 9 0 01-18 0M12 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 4v5h-5" />
     </svg>
 );
 
@@ -121,8 +121,8 @@ const HeroBanner = () => (
             <p className="text-xl sm:text-2xl text-gray-400 max-w-4xl mx-auto mb-10">
                 **Bookify** delivers the world's most powerful, **transformational digital blueprints**—starting with the code to **unlimited wealth.**
             </p>
-            <a 
-                href="#products" 
+            <a
+                href="#products"
                 className="inline-block py-3 px-10 text-lg sm:text-xl font-bold uppercase rounded-full transition duration-300 cta-gold-fill hover:scale-105 shadow-xl"
             >
                 View Bestsellers
@@ -140,18 +140,18 @@ const OurServices = () => (
             </h2>
             {/* Responsive Grid: 1 column on mobile, 3 columns on desktop */}
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <ServiceCard 
-                    title="Blueprints & Guides" 
+                <ServiceCard
+                    title="Blueprints & Guides"
                     description="Immediate access to high-impact, actionable digital books and frameworks designed for rapid personal and financial growth."
                     icon={<BookOpenIcon />}
                 />
-                <ServiceCard 
-                    title="Mindset Reprograming" 
+                <ServiceCard
+                    title="Mindset Reprograming"
                     description="Deep-dive strategies focused on neuroscience and NLP to rewrite limiting beliefs around success, wealth, and productivity."
                     icon={<BrainIcon />}
                 />
-                <ServiceCard 
-                    title="Lifetime Updates" 
+                <ServiceCard
+                    title="Lifetime Updates"
                     description="We continuously evolve our digital products. Your purchase guarantees you access to all future revisions and expansions."
                     icon={<UpdateIcon />}
                 />
@@ -242,28 +242,29 @@ const ProductListing = ({ product }) => {
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-white">
                     Featured <span className="gold-accent">Bestseller</span>
                 </h2>
-                
+
                 {/* Product Card Layout (Responsive) */}
                 <div className="bg-gray-900 p-6 md:p-10 rounded-xl border border-gray-800 shadow-2xl grid lg:grid-cols-3 gap-8 items-center">
-                    
+
                     {/* Column 1: Image */}
                     <div className="col-span-full lg:col-span-1 flex justify-center">
                         <div className="w-full max-w-xs md:max-w-sm">
-                            <img
+                            <Image
                                 src={product.image}
-                                alt={product.title + " Cover"}
+                                alt={`${product.title} Cover`}
+                                width={600}
+                                height={400}
                                 className="book-cover w-full h-auto object-cover rounded-lg"
-                                onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/600x400/1e293b/FFC300?text=Cover+Not+Found'; }}
                             />
                         </div>
                     </div>
-                    
+
                     {/* Column 2: Details */}
                     <div className="col-span-full lg:col-span-2">
                         <p className="text-sm uppercase font-bold tracking-widest gold-accent mb-2">Financial Blueprint Series</p>
                         <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">{product.title}</h3>
                         <p className="text-lg sm:text-xl text-gray-400 mb-6">{product.tagline}</p>
-                        
+
                         <div className="grid sm:grid-cols-2 gap-4 mb-8">
                             {product.features.map((text, index) => (
                                 <div key={index} className="flex items-start space-x-2">
@@ -272,7 +273,7 @@ const ProductListing = ({ product }) => {
                                 </div>
                             ))}
                         </div>
-                        
+
                         {/* CTA Row */}
                         <div className="flex items-center space-x-6 pt-4 border-t border-gray-800">
                             <span className="text-4xl sm:text-5xl font-black gold-accent">{product.price}</span>
@@ -301,7 +302,7 @@ const App = () => {
         { name: "About Us", target: "#about" },
         { name: "Products", target: "#products" },
     ];
-    
+
     return (
         <>
             <style dangerouslySetInnerHTML={{ __html: customStyles }} />
@@ -314,7 +315,7 @@ const App = () => {
                         <a href="#hero" className="flex items-center space-x-2">
                             {/* Inline Book SVG Logo (Gold Accent) */}
                             <svg className="w-7 h-7 gold-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13M12 10.253c-4.97 0-9 1.13-9 2.5s4.03 2.5 9 2.5 9-1.13 9-2.5-4.03-2.5-9-2.5zM3 13.253C3 14.623 7.03 15.753 12 15.753s9-1.13 9-2.5M3 17.253C3 18.623 7.03 19.753 12 19.753s9-1.13 9-2.5"/>
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13M12 10.253c-4.97 0-9 1.13-9 2.5s4.03 2.5 9 2.5 9-1.13 9-2.5-4.03-2.5-9-2.5zM3 13.253C3 14.623 7.03 15.753 12 15.753s9-1.13 9-2.5M3 17.253C3 18.623 7.03 19.753 12 19.753s9-1.13 9-2.5" />
                             </svg>
                             <div className="text-xl sm:text-2xl font-extrabold tracking-tight">
                                 <span className="gold-accent">Book</span><span className="text-white">ify</span>
@@ -324,19 +325,19 @@ const App = () => {
                         {/* Desktop Navigation Links */}
                         <nav className="hidden md:flex space-x-6 lg:space-x-8">
                             {navLinks.map((link) => (
-                                <a 
-                                    key={link.name} 
-                                    href={link.target} 
+                                <a
+                                    key={link.name}
+                                    href={link.target}
                                     className="text-white hover:text-gold-accent transition duration-200 font-medium text-sm lg:text-base"
                                 >
                                     {link.name}
                                 </a>
                             ))}
                         </nav>
-                        
+
                         {/* Mobile Menu Icon (Placeholder, no functionality needed per one-file mandate) */}
                         <button className="md:hidden text-white hover:text-gold-accent">
-                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                         </button>
                     </div>
                 </header>
@@ -347,7 +348,7 @@ const App = () => {
 
                     {/* 2. Our Services Section */}
                     <OurServices />
-                    
+
                     {/* 3. Features / Digital Product Focus */}
                     <FeaturesSection />
 
@@ -359,7 +360,7 @@ const App = () => {
 
                     {/* 6. Product Listing */}
                     <ProductListing product={featuredProduct} />
-                    
+
                 </main>
 
                 {/* Footer */}
