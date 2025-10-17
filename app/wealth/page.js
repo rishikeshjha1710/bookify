@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 // Main App component for the single-file mandate
 const App = () => {
     const [showMessage, setShowMessage] = useState(false);
@@ -185,7 +185,7 @@ const App = () => {
                             <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg mb-8"> {/* Responsive width constraints */}
                                 <div className="book-cover rounded-xl overflow-hidden relative">
                                     {/* Placeholder Image for Wealth Reprograming Code (Landscape: 600x400) */}
-                                    <img
+                                    <Image
                                         src="/Banner.png"
                                         alt="Wealth Reprograming Code Book Cover"
                                         className="w-full h-auto object-cover"
