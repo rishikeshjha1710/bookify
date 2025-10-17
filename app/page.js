@@ -204,10 +204,11 @@ const AboutUsSection = () => (
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
             {/* Placeholder Image/Visual for About Us (Left side on desktop) */}
             <div className="rounded-xl overflow-hidden shadow-2xl order-2 md:order-1">
-                <img
-                    src="https://placehold.co/600x400/1e293b/FFC300?text=Digital+Strategy"
-                    alt="Our Mission"
-                    className="w-full h-auto object-cover"
+                <Image
+                    src="/Banner.png"
+                    alt="description"
+                    width={600}
+                    height={400}
                 />
             </div>
             {/* Text Content (Right side on desktop) */}
