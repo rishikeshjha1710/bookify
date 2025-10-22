@@ -25,9 +25,9 @@ export default function App() {
   const [copiesLeft, setCopiesLeft] = useState(null);
 
   // CTA copy
-  const ctaTextLong = "⚡ Unlock My Wealth Code Now →";
-  const ctaTextShort = "⚡ Unlock My Wealth Code Now →";
-  const ctaAria = "⚡ Unlock My Wealth Code Now →";
+  const ctaTextLong = "⚡Unlock My Wealth Code Now →";
+  const ctaTextShort = "⚡Unlock My Wealth Code Now →";
+  const ctaAria = "⚡Unlock My Wealth Code Now →";
 
   // live purchase rotating toast (green)
   const recentPurchases = [
@@ -350,28 +350,20 @@ export default function App() {
     .cta-compact:hover { transform: translateY(-3px); filter: saturate(1.04); }
 
     /* continuous internal glow inside the button (no external overflow) */
-    .cta-compact::before {
-      content: "";
-      position: absolute;
-      left: -40%;
-      top: -10%;
-      width: 180%;
-      height: 140%;
-      background: radial-gradient(40% 50% at 50% 30%, rgba(255,244,200,0.28), rgba(245,184,0,0.16) 30%, transparent 55%);
-      filter: blur(26px);
-      transform: translateX(0);
-      transition: transform 0.6s linear;
-      pointer-events: none;
-      z-index: 0;
-      animation: glowSweep 3.6s linear infinite;
-      opacity: 0.92;
+     .cta-gold-fill:hover { background-color: #f0b400; transform: scale(1.05); }
+    @keyframes pulse-gold {
+      0%,100% { box-shadow: 0 0 0 0 rgba(255,195,0,0.7); }
+      50% { box-shadow: 0 0 0 10px rgba(255,195,0,0); }
     }
-    .cta-compact > * { position: relative; z-index: 1; } /* keep text above glow */
-
-    @keyframes glowSweep {
-      0% { transform: translateX(-12%); }
-      50% { transform: translateX(12%); }
-      100% { transform: translateX(-12%); }
+    .pulse-effect { animation: pulse-gold 2s infinite; }
+    .book-cover {
+      box-shadow: 0 25px 60px rgba(0,0,0,1), 0 0 45px rgba(255,195,0,0.7);
+      transition: all 0.4s ease-in-out;
+      transform-style: preserve-3d;
+    }
+    .book-cover:hover {
+      transform: scale(1.04) rotateY(3deg);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.9), 0 0 55px rgba(255,195,0,0.9);
     }
 
     /* mobile: place CTA near thumb (fixed bottom center), full width */
@@ -479,10 +471,8 @@ export default function App() {
               <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg mb-2">
                 <div className="hero-visual rounded-xl">
                   <div className="book-cover rounded-xl overflow-hidden relative">
-                    <div className="book-outline" aria-hidden />
-                    <Image src="/Banner.png" alt="Wealth Reprograming Code Book Cover" width={900} height={540} className="w-full h-auto object-cover" />
-
-                    <span className="absolute top-3 left-3 text-xs font-bold px-3 py-1 bg-gray-900 text-white rounded-full tracking-wider opacity-90 border" style={{ borderColor: "rgba(245,184,0,0.08)" }}>
+                    <Image src="/Banner.png" alt="Wealth Reprograming Code Book Cover" width={600} height={400} className="w-full h-auto object-cover" />
+                    <span className="absolute top-3 left-3 text-xs font-bold px-3 py-1 bg-gray-900 text-white rounded-full tracking-wider opacity-90 border border-gold-accent">
                       Blueprint Series
                     </span>
 
@@ -511,21 +501,26 @@ export default function App() {
                     <span className="currency">₹</span>
                     <span className="amount">{price}</span>
                   </div>
-
                   <button
-                    onClick={handlePurchase}
-                    aria-label={ctaAria}
-                    className="cta-compact"
-                    title="Buy now"
-                  >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                      <path d="M13 14H9c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1h4c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1zM20 10l-6-6v2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V10zM19 14h-2v-2h2v2z"></path>
-                    </svg>
+  onClick={handlePurchase}
+  aria-label={ctaAria}
+  title="Buy now"
+  className="cta-compact w-full sm:w-auto flex-grow py-3 sm:py-4 px-0.5 text-sm sm:text-base font-black uppercase rounded-xl transition duration-300
+             fixed bottom-2 left-0 sm:static sm:bottom-auto sm:left-auto z-50
+             bg-gradient-to-r from-[#FFD700] via-[#FFC107] to-[#FFB300] text-gray-900 shadow-lg hover:shadow-2xl transform hover:scale-[1.05] focus:outline-none focus:ring-4 focus:ring-yellow-500 focus:ring-opacity-70 pulse-effect"
+>
+  <span className="flex items-center justify-center space-x-1">
+    <span>
+      <b>
+        <span className="hidden sm:inline font-black">{ctaTextLong}</span>
+      </b>
+      <span className="sm:hidden font-black text-sm">⚡Unlock My Wealth Code Now →</span>
+    </span>
+  </span>
+</button>
 
-                    {/* responsive CTA text */}
-                    <span className="hidden sm:inline font-black">{ctaTextLong}</span>
-                    <span className="sm:hidden font-black">{ctaTextShort}</span>
-                  </button>
+
+
                 </div>
 
                 <p className="text-center lg:text-right text-xs mt-2 text-gray-500">
