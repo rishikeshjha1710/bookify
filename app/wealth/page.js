@@ -31,61 +31,61 @@ export default function App() {
 
   // live purchase rotating toast (green)
   const recentPurchases = [
-    "🔥 Aman from Delhi just unlocked The Wealth Reprogramming Code 🕒 2 mins ago",
-    "🔥 Priya from Mumbai grabbed her copy 🕒 4 mins ago",
-    "🔥 Karan from Jaipur reprogrammed his mindset 🕒 just now",
-    "🔥 Aditi from Pune just bought The Wealth Code 🕒 1 min ago",
-    "🔥 Rohit from Lucknow started his journey to wealth 🕒 3 mins ago",
-    "🔥 Neha from Indore unlocked The Code 🕒 2 mins ago",
-    "🔥 Rahul from Chandigarh downloaded his guide 🕒 4 mins ago",
-    "🔥 Sanya from Delhi just took action 🕒 1 min ago",
-    "🔥 Mohit from Surat grabbed the Diwali offer 🕒 3 mins ago",
-    "🔥 Harshit from Patna joined the tribe 🕒 just now",
-    "🔥 Isha from Hyderabad downloaded Wealth Reprogramming Code 🕒 2 mins ago",
-    "🔥 Abhishek from Bhopal got lifetime access 🕒 4 mins ago",
-    "🔥 Tanu from Kanpur reprogrammed her mindset 🕒 3 mins ago",
-    "🔥 Krish from Ahmedabad took the first step 🕒 1 min ago",
-    "🔥 Meena from Chennai just joined the movement 🕒 2 mins ago",
-    "🔥 Yash from Kolkata just purchased his copy 🕒 4 mins ago",
-    "🔥 Sneha from Delhi unlocked Wealth Reprogramming Code 🕒 1 min ago",
-    "🔥 Aditya from Nagpur reprogrammed his beliefs 🕒 2 mins ago",
-    "🔥 Tanya from Pune joined 12,000+ learners 🕒 3 mins ago",
-    "🔥 Raj from Lucknow grabbed the Diwali bonus 🕒 2 mins ago",
-    "🔥 Ananya from Jaipur started her wealth journey 🕒 just now",
-    "🔥 Vikram from Bangalore unlocked The Code 🕒 1 min ago",
-    "🔥 Shreya from Mumbai grabbed lifetime access 🕒 3 mins ago",
-    "🔥 Aman from Chennai reprogrammed his money mindset 🕒 just now",
-    "🔥 Priya from Hyderabad took the first step to financial freedom 🕒 2 mins ago",
-    "🔥 Rohan from Delhi joined 12,500+ learners 🕒 1 min ago",
-    "🔥 Anika from Pune grabbed the Diwali bonus 🕒 3 mins ago",
-    "🔥 Sameer from Lucknow started wealth transformation 🕒 just now",
-    "🔥 Pooja from Kolkata unlocked The Wealth Code 🕒 2 mins ago",
-    "🔥 Arjun from Ahmedabad grabbed his copy 🕒 4 mins ago",
-    "🔥 Simran from Jaipur just took action 🕒 1 min ago",
-    "🔥 Nikhil from Surat joined the wealth tribe 🕒 2 mins ago",
-    "🔥 Riya from Mumbai reprogrammed her beliefs 🕒 3 mins ago",
-    "🔥 Aditya from Delhi grabbed lifetime access 🕒 just now",
-    "🔥 Tanya from Hyderabad unlocked her first code 🕒 1 min ago",
-    "🔥 Mohit from Bangalore started financial transformation 🕒 2 mins ago",
-    "🔥 Ananya from Delhi grabbed her copy 🕒 just now",
-    "🔥 Kiran from Pune reprogrammed his money mindset 🕒 1 min ago",
-    "🔥 Rhea from Mumbai joined 12,800+ learners 🕒 3 mins ago",
-    "🔥 Arjun from Lucknow grabbed the Diwali offer 🕒 2 mins ago",
-    "🔥 Shreya from Chennai unlocked The Wealth Reprogramming Code 🕒 just now",
-    "🔥 Rahul from Kolkata took the first step 🕒 1 min ago",
-    "🔥 Priya from Jaipur joined the movement 🕒 2 mins ago",
-    "🔥 Aman from Hyderabad reprogrammed his mindset 🕒 3 mins ago",
-    "🔥 Meena from Bangalore grabbed lifetime access 🕒 2 mins ago",
-    "🔥 Tanu from Delhi started wealth journey 🕒 just now",
-    "🔥 Rohan from Pune unlocked the code 🕒 1 min ago",
-    "🔥 Isha from Lucknow took the first step 🕒 3 mins ago",
-    "🔥 Sanya from Kolkata grabbed the Diwali bonus 🕒 2 mins ago",
-    "🔥 Karan from Ahmedabad joined 13,000+ learners 🕒 just now",
-    "🔥 Aditya from Mumbai reprogrammed his beliefs 🕒 1 min ago",
-    "🔥 Neha from Delhi unlocked The Wealth Code 🕒 2 mins ago",
-    "🔥 Krish from Jaipur grabbed his copy 🕒 3 mins ago",
-    "🔥 Riya from Hyderabad took action 🕒 just now",
-    "🔥 Vikram from Pune started wealth transformation 🕒 2 mins ago"
+     "💸 Aman from Delhi unlocked The Wealth Reprogramming Code · 2m ago",
+  "🔥 Priya from Mumbai claimed her Diwali bonus · 4m ago",
+  "✨ Karan from Jaipur reprogrammed his mindset · just now",
+  "⚡ Aditi from Pune secured lifetime access · 1m ago",
+  "💰 Rohit from Lucknow started his wealth journey · 3m ago",
+  "🔥 Neha from Indore took the first step to abundance · 2m ago",
+  "💥 Rahul from Chandigarh downloaded his guide · 4m ago",
+  "💫 Sanya from Delhi joined 12,000+ learners · just now",
+  "💎 Mohit from Surat claimed his Wealth Code · 1m ago",
+  "🌟 Harshit from Patna joined the success tribe · 2m ago",
+  "🔥 Isha from Hyderabad unlocked lifetime access · 3m ago",
+  "💰 Abhishek from Bhopal reprogrammed his mindset · 4m ago",
+  "⚡ Tanya from Pune started her financial journey · just now",
+  "💫 Krish from Ahmedabad took action · 1m ago",
+  "💸 Meena from Chennai grabbed the Diwali offer · 2m ago",
+  "🔥 Yash from Kolkata joined the inner circle · 3m ago",
+  "💎 Sneha from Delhi unlocked The Code · just now",
+  "💰 Aditya from Nagpur claimed the bonus pack · 1m ago",
+  "✨ Tanya from Pune joined 14,000+ learners · 3m ago",
+  "⚡ Raj from Lucknow started his wealth shift · 2m ago",
+  "🔥 Ananya from Jaipur reprogrammed her beliefs · just now",
+  "💎 Vikram from Bangalore unlocked The Wealth Code · 1m ago",
+  "💫 Shreya from Mumbai grabbed lifetime access · 3m ago",
+  "💸 Aman from Chennai started abundance reprogramming · just now",
+  "⚡ Priya from Hyderabad took the first step to success · 2m ago",
+  "🔥 Rohan from Delhi joined 14,500+ members · 1m ago",
+  "💰 Anika from Pune claimed her bonus guide · 3m ago",
+  "✨ Sameer from Lucknow started wealth transformation · just now",
+  "💎 Pooja from Kolkata unlocked her first code · 2m ago",
+  "🔥 Arjun from Ahmedabad grabbed his copy · 4m ago",
+  "💫 Simran from Jaipur took action towards freedom · 1m ago",
+  "⚡ Nikhil from Surat joined the movement · 2m ago",
+  "💰 Riya from Mumbai reprogrammed her mindset · 3m ago",
+  "💸 Aditya from Delhi grabbed the lifetime offer · just now",
+  "🔥 Tanya from Hyderabad unlocked her first Wealth Code · 1m ago",
+  "💎 Mohit from Bangalore began his journey to financial freedom · 2m ago",
+  "✨ Ananya from Delhi joined the Wealth Tribe · just now",
+  "⚡ Kiran from Pune started his mindset shift · 1m ago",
+  "🔥 Rhea from Mumbai joined 15,000+ learners · 3m ago",
+  "💫 Arjun from Lucknow claimed the Diwali bonus · 2m ago",
+  "💰 Shreya from Chennai unlocked her success code · just now",
+  "💎 Rahul from Kolkata took the first step · 1m ago",
+  "⚡ Priya from Jaipur joined the inner circle · 2m ago",
+  "🔥 Aman from Hyderabad reprogrammed his beliefs · 3m ago",
+  "💫 Meena from Bangalore grabbed lifetime access · 2m ago",
+  "💸 Tanu from Delhi started her journey to abundance · just now",
+  "⚡ Rohan from Pune unlocked his mindset code · 1m ago",
+  "💎 Isha from Lucknow joined the Wealth Revolution · 3m ago",
+  "💰 Sanya from Kolkata grabbed her bonus copy · 2m ago",
+  "🔥 Karan from Ahmedabad joined 15,200+ learners · just now",
+  "💎 Aditya from Mumbai reprogrammed his subconscious · 1m ago",
+  "💫 Neha from Delhi unlocked her transformation guide · 2m ago",
+  "⚡ Krish from Jaipur took action toward success · 3m ago",
+  "💰 Riya from Hyderabad joined the winning circle · just now",
+  "💎 Vikram from Pune started his abundance shift · 2m ago"
   ];
 
   const [activePurchaseIndex, setActivePurchaseIndex] = useState(0);
@@ -396,9 +396,37 @@ export default function App() {
       .hero-visual::before, .hero-visual::after, .cta-compact::before, .book-cover { animation: none; transition: none; }
     }
 
-    /* toasts: keep live purchase toast as-is */
-    #live-toast { z-index: 1200; left: 18px; bottom: 22px; transform: translateY(120%); transition: transform 0.45s cubic-bezier(.2,.8,.2,1), opacity 0.3s; opacity:0; }
-    #live-toast.show { transform: translateY(0); opacity:1; }
+    /* live purchase toast positioning + responsive override */
+    #live-toast {
+      z-index: 1200;
+      left: 18px;
+      bottom: 22px;
+      transform: translateY(120%);
+      transition: transform 0.45s cubic-bezier(.2,.8,.2,1), opacity 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    #live-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* mobile override: center and lift the toast so it sits above the fixed CTA */
+    @media (max-width: 640px) {
+      #live-toast {
+        left: 50% !important;
+        bottom: 86px !important; /* place above the mobile CTA */
+        transform: translate(-50%, 120%);
+        width: calc(100% - 40px);
+        text-align: center;
+        border-radius: 9999px;
+        padding: 10px 14px;
+      }
+      #live-toast.show {
+        transform: translate(-50%, 0);
+      }
+    }
   `;
 
   // Render: show placeholders for SSR until mounted === true
@@ -408,7 +436,11 @@ export default function App() {
 
       <div className="premium-bg text-gray-200 min-h-screen flex flex-col">
         {/* Live purchase toast bottom-left (green) */}
-        <div id="live-toast" className={`fixed p-3 rounded-lg bg-black border border-gray-800 shadow-lg ${showLiveToast ? "show" : ""}`} style={{ left: 18, bottom: 22 }}>
+        <div
+          id="live-toast"
+          className={`fixed p-3 rounded-lg bg-black border border-gray-800 shadow-lg ${showLiveToast ? "show" : ""}`}
+          style={{ left: 18, bottom: 22 }}
+        >
           <div className="flex items-center space-x-3">
             <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             <div>
