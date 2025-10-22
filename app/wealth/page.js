@@ -31,61 +31,61 @@ export default function App() {
 
   // live purchase rotating toast (green)
   const recentPurchases = [
-     "💸 Aman from Delhi unlocked The Wealth Reprogramming Code · 2m ago",
-  "🔥 Priya from Mumbai claimed her Diwali bonus · 4m ago",
-  "✨ Karan from Jaipur reprogrammed his mindset · just now",
-  "⚡ Aditi from Pune secured lifetime access · 1m ago",
-  "💰 Rohit from Lucknow started his wealth journey · 3m ago",
-  "🔥 Neha from Indore took the first step to abundance · 2m ago",
-  "💥 Rahul from Chandigarh downloaded his guide · 4m ago",
-  "💫 Sanya from Delhi joined 12,000+ learners · just now",
-  "💎 Mohit from Surat claimed his Wealth Code · 1m ago",
-  "🌟 Harshit from Patna joined the success tribe · 2m ago",
-  "🔥 Isha from Hyderabad unlocked lifetime access · 3m ago",
-  "💰 Abhishek from Bhopal reprogrammed his mindset · 4m ago",
-  "⚡ Tanya from Pune started her financial journey · just now",
-  "💫 Krish from Ahmedabad took action · 1m ago",
-  "💸 Meena from Chennai grabbed the Diwali offer · 2m ago",
-  "🔥 Yash from Kolkata joined the inner circle · 3m ago",
-  "💎 Sneha from Delhi unlocked The Code · just now",
-  "💰 Aditya from Nagpur claimed the bonus pack · 1m ago",
-  "✨ Tanya from Pune joined 14,000+ learners · 3m ago",
-  "⚡ Raj from Lucknow started his wealth shift · 2m ago",
-  "🔥 Ananya from Jaipur reprogrammed her beliefs · just now",
-  "💎 Vikram from Bangalore unlocked The Wealth Code · 1m ago",
-  "💫 Shreya from Mumbai grabbed lifetime access · 3m ago",
-  "💸 Aman from Chennai started abundance reprogramming · just now",
-  "⚡ Priya from Hyderabad took the first step to success · 2m ago",
-  "🔥 Rohan from Delhi joined 14,500+ members · 1m ago",
-  "💰 Anika from Pune claimed her bonus guide · 3m ago",
-  "✨ Sameer from Lucknow started wealth transformation · just now",
-  "💎 Pooja from Kolkata unlocked her first code · 2m ago",
-  "🔥 Arjun from Ahmedabad grabbed his copy · 4m ago",
-  "💫 Simran from Jaipur took action towards freedom · 1m ago",
-  "⚡ Nikhil from Surat joined the movement · 2m ago",
-  "💰 Riya from Mumbai reprogrammed her mindset · 3m ago",
-  "💸 Aditya from Delhi grabbed the lifetime offer · just now",
-  "🔥 Tanya from Hyderabad unlocked her first Wealth Code · 1m ago",
-  "💎 Mohit from Bangalore began his journey to financial freedom · 2m ago",
-  "✨ Ananya from Delhi joined the Wealth Tribe · just now",
-  "⚡ Kiran from Pune started his mindset shift · 1m ago",
-  "🔥 Rhea from Mumbai joined 15,000+ learners · 3m ago",
-  "💫 Arjun from Lucknow claimed the Diwali bonus · 2m ago",
-  "💰 Shreya from Chennai unlocked her success code · just now",
-  "💎 Rahul from Kolkata took the first step · 1m ago",
-  "⚡ Priya from Jaipur joined the inner circle · 2m ago",
-  "🔥 Aman from Hyderabad reprogrammed his beliefs · 3m ago",
-  "💫 Meena from Bangalore grabbed lifetime access · 2m ago",
-  "💸 Tanu from Delhi started her journey to abundance · just now",
-  "⚡ Rohan from Pune unlocked his mindset code · 1m ago",
-  "💎 Isha from Lucknow joined the Wealth Revolution · 3m ago",
-  "💰 Sanya from Kolkata grabbed her bonus copy · 2m ago",
-  "🔥 Karan from Ahmedabad joined 15,200+ learners · just now",
-  "💎 Aditya from Mumbai reprogrammed his subconscious · 1m ago",
-  "💫 Neha from Delhi unlocked her transformation guide · 2m ago",
-  "⚡ Krish from Jaipur took action toward success · 3m ago",
-  "💰 Riya from Hyderabad joined the winning circle · just now",
-  "💎 Vikram from Pune started his abundance shift · 2m ago"
+    "💸 Aman from Delhi unlocked The Wealth Reprogramming Code · 2m ago",
+    "🔥 Priya from Mumbai claimed her Diwali bonus · 4m ago",
+    "✨ Karan from Jaipur reprogrammed his mindset · just now",
+    "⚡ Aditi from Pune secured lifetime access · 1m ago",
+    "💰 Rohit from Lucknow started his wealth journey · 3m ago",
+    "🔥 Neha from Indore took the first step to abundance · 2m ago",
+    "💥 Rahul from Chandigarh downloaded his guide · 4m ago",
+    "💫 Sanya from Delhi joined 12,000+ learners · just now",
+    "💎 Mohit from Surat claimed his Wealth Code · 1m ago",
+    "🌟 Harshit from Patna joined the success tribe · 2m ago",
+    "🔥 Isha from Hyderabad unlocked lifetime access · 3m ago",
+    "💰 Abhishek from Bhopal reprogrammed his mindset · 4m ago",
+    "⚡ Tanya from Pune started her financial journey · just now",
+    "💫 Krish from Ahmedabad took action · 1m ago",
+    "💸 Meena from Chennai grabbed the Diwali offer · 2m ago",
+    "🔥 Yash from Kolkata joined the inner circle · 3m ago",
+    "💎 Sneha from Delhi unlocked The Code · just now",
+    "💰 Aditya from Nagpur claimed the bonus pack · 1m ago",
+    "✨ Tanya from Pune joined 14,000+ learners · 3m ago",
+    "⚡ Raj from Lucknow started his wealth shift · 2m ago",
+    "🔥 Ananya from Jaipur reprogrammed her beliefs · just now",
+    "💎 Vikram from Bangalore unlocked The Wealth Code · 1m ago",
+    "💫 Shreya from Mumbai grabbed lifetime access · 3m ago",
+    "💸 Aman from Chennai started abundance reprogramming · just now",
+    "⚡ Priya from Hyderabad took the first step to success · 2m ago",
+    "🔥 Rohan from Delhi joined 14,500+ members · 1m ago",
+    "💰 Anika from Pune claimed her bonus guide · 3m ago",
+    "✨ Sameer from Lucknow started wealth transformation · just now",
+    "💎 Pooja from Kolkata unlocked her first code · 2m ago",
+    "🔥 Arjun from Ahmedabad grabbed his copy · 4m ago",
+    "💫 Simran from Jaipur took action towards freedom · 1m ago",
+    "⚡ Nikhil from Surat joined the movement · 2m ago",
+    "💰 Riya from Mumbai reprogrammed her mindset · 3m ago",
+    "💸 Aditya from Delhi grabbed the lifetime offer · just now",
+    "🔥 Tanya from Hyderabad unlocked her first Wealth Code · 1m ago",
+    "💎 Mohit from Bangalore began his journey to financial freedom · 2m ago",
+    "✨ Ananya from Delhi joined the Wealth Tribe · just now",
+    "⚡ Kiran from Pune started his mindset shift · 1m ago",
+    "🔥 Rhea from Mumbai joined 15,000+ learners · 3m ago",
+    "💫 Arjun from Lucknow claimed the Diwali bonus · 2m ago",
+    "💰 Shreya from Chennai unlocked her success code · just now",
+    "💎 Rahul from Kolkata took the first step · 1m ago",
+    "⚡ Priya from Jaipur joined the inner circle · 2m ago",
+    "🔥 Aman from Hyderabad reprogrammed his beliefs · 3m ago",
+    "💫 Meena from Bangalore grabbed lifetime access · 2m ago",
+    "💸 Tanu from Delhi started her journey to abundance · just now",
+    "⚡ Rohan from Pune unlocked his mindset code · 1m ago",
+    "💎 Isha from Lucknow joined the Wealth Revolution · 3m ago",
+    "💰 Sanya from Kolkata grabbed her bonus copy · 2m ago",
+    "🔥 Karan from Ahmedabad joined 15,200+ learners · just now",
+    "💎 Aditya from Mumbai reprogrammed his subconscious · 1m ago",
+    "💫 Neha from Delhi unlocked her transformation guide · 2m ago",
+    "⚡ Krish from Jaipur took action toward success · 3m ago",
+    "💰 Riya from Hyderabad joined the winning circle · just now",
+    "💎 Vikram from Pune started his abundance shift · 2m ago"
   ];
 
   const [activePurchaseIndex, setActivePurchaseIndex] = useState(0);
@@ -456,7 +456,7 @@ export default function App() {
             <div className="flex items-center space-x-3">
               <a href="#" className="flex items-center space-x-2">
                 <svg className="w-7 h-7 gold-accent" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 6.253v13M12 10.253c-4.97 0-9 1.13-9 2.5s4.03 2.5 9 2.5 9-1.13 9-2.5-4.03-2.5-9-2.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M12 6.253v13M12 10.253c-4.97 0-9 1.13-9 2.5s4.03 2.5 9 2.5 9-1.13 9-2.5-4.03-2.5-9-2.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 <div className="text-xl sm:text-2xl font-extrabold tracking-tight">
                   <span className="gold-accent">Book</span><span className="text-white">ify</span>
@@ -488,7 +488,7 @@ export default function App() {
 
                     {/* copies left badge on top-right of image */}
                     <div className="absolute top-3 right-3 scarcity-badge flex items-center space-x-2">
-                      <svg className="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 01.894.553l4 8A1 1 0 0114 12H6a1 1 0 01-.894-1.447l4-8A1 1 0 0110 2z"/></svg>
+                      <svg className="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 01.894.553l4 8A1 1 0 0114 12H6a1 1 0 01-.894-1.447l4-8A1 1 0 0110 2z" /></svg>
                       <div>
                         <div className="text-xs text-gray-300">Only</div>
                         <div className="text-sm font-semibold text-white">{mounted && copiesLeft !== null ? `${copiesLeft} copies left` : "\u2014"}</div>
@@ -558,10 +558,10 @@ export default function App() {
               <h2 className="text-lg sm:text-xl font-extrabold mb-4 gold-accent">What You Will Reprogram:</h2>
 
               <div className="grid grid-cols-2 gap-4 text-sm mb-10 text-gray-400">
-                <FeatureItem text="The 7 Financial Limiting Beliefs" />
-                <FeatureItem text="The Abundance Mindset Installation" />
-                <FeatureItem text="Automated Wealth Accumulation" />
-                <FeatureItem text="High-Value Opportunity Recognition" />
+                <FeatureItem text="7 Hidden Beliefs That Keep You Struggling With Money" />
+                <FeatureItem text="Upgrade Your Mindset: From Scarcity to Abundance" />
+                <FeatureItem text="Earn While You Sleep: Secrets of Automated Wealth" />
+                <FeatureItem text="Spot High-Value Opportunities Before Everyone Else" />
               </div>
             </div>
           </div>
@@ -573,8 +573,97 @@ export default function App() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-              <TestimonialCard quote={"This book isn’t theory; it’s a financial operating system update. My entire approach to money shifted from scarcity to abundance. Highly recommended."} name={"Rahul S."} role={"Software Architect"} />
-              <TestimonialCard quote={"I finally understood the ‘why’ behind my money habits. Mr. X’s “Code” is the simplest, most direct blueprint for building sustainable wealth I’ve ever read."} name={"Priya M."} role={"E-commerce Founder"} />
+              <TestimonialCard
+                quote={"This book isn’t theory; it’s a financial operating system update. My entire approach to money shifted from scarcity to abundance. Highly recommended."}
+                name={"Rahul S."}
+                role={"Software Architect"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"I finally understood the ‘why’ behind my money habits. Mr. X’s “Code” is the simplest, most direct blueprint for building sustainable wealth I’ve ever read."}
+                name={"Priya M."}
+                role={"E-commerce Founder"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"It felt like my brain was getting rewired line by line. After applying the methods for just 10 days, I started saving effortlessly and attracting new income sources."}
+                name={"Aman T."}
+                role={"Finance Analyst"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"This isn’t motivation — it’s reprogramming. I went from paycheck anxiety to building a side business that made ₹80,000 last month."}
+                name={"Sneha K."}
+                role={"Marketing Consultant"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"Every page unlocked a deep truth about wealth and mindset. I wish I had this book five years ago."}
+                name={"Arjun R."}
+                role={"Startup Founder"}
+                stars={4}
+              />
+
+              <TestimonialCard
+                quote={"I used to chase money. Now money flows to me — I can literally feel the shift in my thinking. The Code works."}
+                name={"Tanya B."}
+                role={"Designer & Creator"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"You can’t read this and stay the same. Within a week, I attracted two freelance clients just by applying the belief rewiring part."}
+                name={"Harshit G."}
+                role={"Freelancer"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"The practical exercises at the end of each chapter hit deep. This is not motivation fluff — it’s transformation engineering."}
+                name={"Vikram P."}
+                role={"Entrepreneur"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"I’ve read every self-help book out there, but nothing integrated mindset and wealth like this. It’s pure subconscious mastery."}
+                name={"Neha S."}
+                role={"Chartered Accountant"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"My energy, focus, and confidence in business have completely changed. It’s more than a book — it’s a mental reset."}
+                name={"Ananya J."}
+                role={"Digital Marketer"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"At first, I was skeptical. Now, after 21 days, I feel calmer, wealthier, and more in control than ever. This book is magic in logic form."}
+                name={"Karan D."}
+                role={"Civil Engineer"}
+                stars={4}
+              />
+
+              <TestimonialCard
+                quote={"From being stuck in debt to building new income streams — this book literally changed my financial vibration."}
+                name={"Riya V."}
+                role={"Content Creator"}
+                stars={5}
+              />
+
+              <TestimonialCard
+                quote={"I sent this book to my brother — both of us started implementing it. Within two weeks, our decisions started aligning automatically with abundance."}
+                name={"Aditya N."}
+                role={"UX Designer"}
+                stars={5}
+              />
+
             </div>
           </section>
 
@@ -604,16 +693,36 @@ const FeatureItem = ({ text }) => (
     <p className="text-gray-400 text-sm">{text}</p>
   </div>
 );
+const TestimonialCard = ({ quote, name, role, stars = 5 }) => {
+  // Create star icons dynamically based on rating
+  const renderStars = () => {
+    return Array.from({ length: stars }, (_, i) => (
+      <span key={i} className="text-yellow-400 text-lg sm:text-xl animate-pulse">
+        ⭐
+      </span>
+    ));
+  };
 
-const TestimonialCard = ({ quote, name, role }) => (
-  <div className="p-5 sm:p-6 bg-gray-900 rounded-xl border border-gray-700 hover:border-gold-accent transition duration-300">
-    <div className="text-3xl sm:text-4xl text-gray-600 mb-4">“</div>
-    <p className="text-base sm:text-lg italic text-gray-300 mb-4 leading-relaxed">
-      “{quote}”
-    </p>
-    <div className="pt-4 border-t border-gray-800">
-      <p className="font-bold gold-accent">{name}</p>
-      <p className="text-xs sm:text-sm text-gray-500">{role}</p>
+  return (
+    <div className="p-5 sm:p-6 bg-gray-900 rounded-2xl border border-gray-800 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-400/10 transition duration-300">
+      {/* Quote Symbol */}
+      <div className="text-5xl sm:text-6xl text-yellow-600 mb-3 font-serif leading-none">“</div>
+
+      {/* Quote Text */}
+      <p className="text-base sm:text-lg italic text-gray-300 mb-5 leading-relaxed">
+        “{quote}”
+      </p>
+
+      {/* Bottom Section */}
+      <div className="pt-4 border-t border-gray-800 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="font-bold text-yellow-400">{name}</p>
+          <p className="text-xs sm:text-sm text-gray-500">{role}</p>
+        </div>
+
+        {/* Stars */}
+        <div className="mt-3 sm:mt-0 flex space-x-1">{renderStars()}</div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
