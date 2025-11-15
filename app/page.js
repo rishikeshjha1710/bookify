@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { Menu, X, BookOpen, Users, DollarSign, Briefcase, ArrowRight, Zap, Target, Brain } from 'lucide-react'; // Added new icons
 
