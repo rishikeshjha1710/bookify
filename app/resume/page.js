@@ -58,7 +58,7 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold"><img src='log.png'></img></div>
           <div>
-            <div className="font-semibold text-lg">ResumeHive</div>
+            <div className="font-semibold text-lg">Bookify</div>
             <div className="text-xs text-gray-500">ATS-Optimized • ₹249 • Built for Instagram job-hunters</div>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function Home() {
 
           <div className="mt-6 flex gap-4">
             <button onClick={() => window.location.href = "https://rzp.io/rzp/wFW4xh15"} className="px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow-lg">Get access ₹249</button>
-            <a href="#features" className="px-4 py-3 rounded-lg border">See what's inside</a>
+            <a href="#features" className="px-4 py-3 rounded-lg border">See what is inside</a>
           </div>
 
           <div className="mt-6 grid grid-cols-2 gap-3 max-w-md">
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="max-w-xl">
               <h2 className="text-3xl font-extrabold">Trusted by <span className="text-indigo-600">20,000+</span> freshers</h2>
-              <p className="mt-3 text-gray-700">Over 20,000 users reported interviews and placement progress after using ResumeHive's step-by-step system. We anonymize and verify placement screenshots on demand.</p>
+              <p className="mt-3 text-gray-700">Over 20,000 users reported interviews and placement progress after using ResumeHive step-by-step system. We anonymize and verify placement screenshots on demand.</p>
 
               <div className="mt-6 grid grid-cols-3 gap-4">
                 <StatCard label="Users" value="20,000+" />
@@ -180,7 +180,7 @@ export default function Home() {
                       <div className="text-xs text-gray-500">{testimonials[slide].role}</div>
                     </div>
                   </div>
-                  <p className="mt-4 text-gray-700">"{testimonials[slide].quote}"</p>
+                  <p className="mt-4 text-gray-700">{testimonials[slide].quote}</p>
 
                   <div className="mt-4 flex gap-2">
                     {testimonials.map((t, i) => (
@@ -258,7 +258,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 rounded-xl bg-white shadow col-span-2">
-            <h3 className="font-semibold">What's inside — full breakdown</h3>
+            <h3 className="font-semibold">What is inside — full breakdown</h3>
             <ol className="mt-4 list-decimal list-inside text-sm text-gray-700 space-y-2">
               <li>3 ATS-ready resume templates (Fresher, Experienced, Switcher)</li>
               <li>ATS scoring checklist & keywords bank</li>
@@ -281,12 +281,12 @@ export default function Home() {
               <p className="mt-2">Instant download link after purchase. Files include PDF + editable DOCX + ATS checklist.</p>
             </div>
             <div>
-              <strong>Is the "20,000+" number real?</strong>
+              <strong>Is the 20,000+ number real?</strong>
               <p className="mt-2">This is a cumulative count of users who reported positive outcomes after following our playbook. Detailed screenshots and anonymized proof are available after purchase.</p>
             </div>
             <div>
               <strong>Do you offer refunds?</strong>
-              <p className="mt-2">30-day money-back if you don't see interviews after following the playbook (terms & minimal evidence required).</p>
+              <p className="mt-2">30-day money-back if you donot see interviews after following the playbook (terms & minimal evidence required).</p>
             </div>
             <div>
               <strong>Can I edit templates?</strong>
