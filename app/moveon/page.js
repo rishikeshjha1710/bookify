@@ -51,13 +51,13 @@ function Header({ brand }) {
         </div>
         <div>
           <div className="font-extrabold text-base sm:text-lg">{brand}</div>
-          <div className="text-xs text-gray-500">The Cheating Detector</div>
+          <div className="text-xs text-gray-500">You Lost Me — When I Found Myself</div>
         </div>
       </div>
 
       <div className="hidden md:flex items-center gap-4">
         <a href="#testimonials" className="text-sm text-gray-700 hover:underline">Reader stories</a>
-        <a href="#buy" className="bg-gradient-to-r from-[#FF8A80] to-[#4FC3F7] text-white px-4 py-2 rounded-full text-sm font-semibold shadow">Buy — ₹299</a>
+        <a href="https://rzp.io/rzp/KzAudjAX" className="bg-gradient-to-r from-[#FF8A80] to-[#4FC3F7] text-white px-4 py-2 rounded-full text-sm font-semibold shadow">Buy — ₹149</a>
       </div>
     </header>
   );
@@ -74,7 +74,7 @@ function Hero({ email }) {
 
         <div className="mt-6">
           {/* Large primary CTA — prominent and ideal size */}
-          <a href="#buy" className="inline-block w-full sm:w-auto text-center bg-gradient-to-r from-[#FF8A80] to-[#4FC3F7] text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:scale-102 transition transform">Get the Book — ₹299</a>
+          <a href="https://rzp.io/rzp/KzAudjAX" className="inline-block w-full sm:w-auto text-center bg-gradient-to-r from-[#FF8A80] to-[#4FC3F7] text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:scale-102 transition transform">Get the Book — ₹149</a>
         </div>
 
         <div className="mt-6 grid grid-cols-3 gap-3 max-w-sm">
@@ -173,7 +173,7 @@ function ReaderVoices() {
 }
 
 function Pricing({ email }) {
-  const SALE = 299;
+  const SALE = 149;
   const REGULAR = 2499;
   const SALE_SECONDS = 43 * 60; // 43 minutes
 
@@ -210,14 +210,10 @@ function Pricing({ email }) {
 
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
           {/* Razorpay payment button embed */}
-          <div>
-            <form>
-              <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_RIEW2LTgbnLVRJ" async></script>
-            </form>
-          </div>
+         
 
           {/* Fallback */}
-          <a href={`mailto:${email}?subject=Purchase%20You%20Lost%20Me%20₹${price}`} className="bg-[#FF8A80] text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Buy via Email — ₹{price}</a>
+          <a href="https://rzp.io/rzp/KzAudjAX" className="bg-[#FF8A80] text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">Buy Now— ₹{price}</a>
         </div>
 
         <p className="mt-3 text-xs text-gray-500">If you face payment issues, email us at {email} for manual support.</p>
@@ -247,8 +243,8 @@ function Author() {
 function FAQ() {
   const items = [
     { q: 'Is this therapy?', a: 'No — this is a practical self-help guide. For clinical help, see a licensed professional.' },
-    { q: 'How will I get the book?', a: 'You will receive a secure download link via email immediately after payment.' },
-    { q: 'Refunds?', a: '7-day satisfaction policy. Contact: offers@bookifie.in' }
+    { q: 'How will I get the book?', a: 'You will receive a secure download link after payment.' },
+    { q: 'Refunds?', a: 'No Refund of this Book' }
   ];
   const [open, setOpen] = useState(0);
   return (
@@ -289,8 +285,8 @@ function StickyCTA() {
 
   return (
     <div className={`fixed right-4 bottom-20 z-50 transition-transform ${visible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'}`}>
-      <a href="#buy" className="flex items-center gap-3 bg-gradient-to-r from-[#4FC3F7] to-[#FF8A80] text-white px-5 py-4 rounded-full shadow-2xl hover:scale-105 transform transition">
-        <span className="font-semibold text-lg">Buy — ₹299</span>
+      <a href="https://rzp.io/rzp/KzAudjAX" className="flex items-center gap-3 bg-gradient-to-r from-[#4FC3F7] to-[#FF8A80] text-white px-5 py-4 rounded-full shadow-2xl hover:scale-105 transform transition">
+        <span className="font-semibold text-lg">Buy — ₹149</span>
       </a>
     </div>
   );
