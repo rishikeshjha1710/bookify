@@ -192,7 +192,7 @@ fbq('track', 'PageView');
         `}
       </Script>
       <noscript>
-        <img height="1" width="1" style="display:none"
+        <img height="1" width="1" style={{ display: 'none' }}
           src="https://www.facebook.com/tr?id=1721861235645400&ev=PageView&noscript=1"
           alt=""
         />
