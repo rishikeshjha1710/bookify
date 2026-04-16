@@ -20,6 +20,8 @@ import {
   BadgeCheck,
 } from "lucide-react";
 
+import Script from 'next/script';
+
 const PAYMENT_URL = "https://rzp.io/rzp/x1cgunX";
 
 const reasons = [
@@ -175,6 +177,25 @@ export default function PremiumHindiFunnelPage() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#050816] text-white">
+      <Script id="facebook-pixel" strategy="afterInteractive">
+        {`
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1721861235645400');
+fbq('track', 'PageView');
+        `}
+      </Script>
+      <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1721861235645400&ev=PageView&noscript=1"
+        />
+      </noscript>
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.12),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(34,211,238,0.14),transparent_22%),radial-gradient(circle_at_bottom_left,rgba(139,92,246,0.16),transparent_30%)]" />
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:72px_72px] opacity-20" />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_center,transparent_0,rgba(5,8,22,0.15)_55%,rgba(5,8,22,0.82)_100%)]" />
