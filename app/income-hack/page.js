@@ -110,7 +110,7 @@ function CTAButton({ href, label, sublabel, className = "" }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className={`group inline-flex items-center justify-center gap-3 rounded-2xl border border-yellow-300/40 bg-gradient-to-r from-yellow-300 via-amber-300 to-yellow-400 px-6 py-4 text-sm font-extrabold text-black shadow-[0_18px_60px_rgba(250,204,21,0.35)] transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.01] ${className}`}
+      className={`group inline-flex items-center justify-center gap-3 rounded-2xl border border-yellow-300/40 bg-linear-to-r from-yellow-300 via-amber-300 to-yellow-400 px-6 py-4 text-sm font-extrabold text-black shadow-[0_18px_60px_rgba(250,204,21,0.35)] transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.01] ${className}`}
     >
       <span className="flex flex-col items-start leading-tight">
         <span className="flex items-center gap-2">
@@ -146,9 +146,9 @@ function AccordionItem({ q, a, open, onToggle }) {
 
 function ValueCard({ index, title, desc }) {
   return (
-    <div className="relative overflow-hidden rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.22)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/8">
+    <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.22)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/8">
       <div className="absolute right-4 top-4 text-5xl font-black text-white/5">0{index + 1}</div>
-      <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400/20 to-violet-500/20 text-cyan-200 ring-1 ring-white/10">
+      <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-400/20 to-violet-500/20 text-cyan-200 ring-1 ring-white/10">
         <Target className="h-5 w-5" />
       </div>
       <h3 className="text-xl font-semibold text-white">{title}</h3>
@@ -193,18 +193,19 @@ fbq('track', 'PageView');
       </Script>
       <noscript>
         <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1721861235645400&ev=PageView&noscript=1"
+          src="https://www.facebook.com/tr?id=1721861235645400&ev=PageView&noscript=1"
+          alt=""
         />
       </noscript>
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.12),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(34,211,238,0.14),transparent_22%),radial-gradient(circle_at_bottom_left,rgba(139,92,246,0.16),transparent_30%)]" />
-      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:72px_72px] opacity-20" />
+      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[72px_72px] opacity-20" />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_center,transparent_0,rgba(5,8,22,0.15)_55%,rgba(5,8,22,0.82)_100%)]" />
 
       <div className="relative z-10 pb-24 sm:pb-0">
         <div className="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/80 backdrop-blur-xl">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
             <div className="flex items-center gap-3">
-              <div className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-yellow-300 to-amber-400 text-black shadow-lg shadow-yellow-400/20">
+              <div className="grid h-10 w-10 place-items-center rounded-2xl bg-linear-to-br from-yellow-300 to-amber-400 text-black shadow-lg shadow-yellow-400/20">
                 <BookOpen className="h-5 w-5" />
               </div>
               <div>
@@ -259,8 +260,8 @@ fbq('track', 'PageView');
             </div>
 
             <div className="relative">
-              <div className="absolute -inset-4 rounded-[32px] bg-gradient-to-r from-yellow-300/20 via-violet-500/18 to-cyan-400/20 blur-3xl" />
-              <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/6 p-6 shadow-2xl backdrop-blur-2xl">
+              <div className="absolute -inset-4 rounded-4xl bg-linear-to-r from-yellow-300/20 via-violet-500/18 to-cyan-400/20 blur-3xl" />
+              <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-white/6 p-6 shadow-2xl backdrop-blur-2xl">
                 <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-yellow-300/10 blur-3xl" />
                 <div className="absolute -bottom-10 left-10 h-32 w-32 rounded-full bg-violet-500/10 blur-3xl" />
 
@@ -287,7 +288,7 @@ fbq('track', 'PageView');
                   ))}
                 </div>
 
-                <div className="mt-6 rounded-2xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-5">
+                <div className="mt-6 rounded-2xl border border-white/10 bg-linear-to-br from-white/8 to-white/4 p-5">
                   <div className="flex items-center justify-between gap-3">
                     <div>
                       <div className="text-xs uppercase tracking-[0.22em] text-slate-400">Today’s price</div>
@@ -339,7 +340,7 @@ fbq('track', 'PageView');
               </div>
             </div>
 
-            <div className="rounded-[28px] border border-white/10 bg-gradient-to-br from-yellow-300/10 via-violet-500/10 to-cyan-400/10 p-7 backdrop-blur-xl">
+            <div className="rounded-[28px] border border-white/10 bg-linear-to-br from-yellow-300/10 via-violet-500/10 to-cyan-400/10 p-7 backdrop-blur-xl">
               <SectionTitle
                 eyebrow="Trust stack"
                 title="Why people click the button"
@@ -378,7 +379,7 @@ fbq('track', 'PageView');
               { n: "Priya", c: "Mumbai", t: "Feels expensive and clean" },
               { n: "Aman", c: "Lucknow", t: "Buy button stands out perfectly" },
             ].map((t) => (
-              <div key={t.n} className="rounded-[24px] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+              <div key={t.n} className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
                 <div className="flex gap-1 text-amber-300">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
@@ -393,7 +394,7 @@ fbq('track', 'PageView');
         </section>
 
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur-xl sm:p-10">
+          <div className="rounded-4xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl sm:p-10">
             <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emerald-400/10 px-4 py-2 text-xs font-medium text-emerald-300">
@@ -456,7 +457,7 @@ fbq('track', 'PageView');
         </section>
 
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-[36px] border border-white/10 bg-gradient-to-br from-yellow-300/10 via-violet-500/10 to-cyan-400/10 p-8 text-center shadow-[0_30px_120px_rgba(0,0,0,0.35)] sm:p-12">
+          <div className="relative overflow-hidden rounded-[36px] border border-white/10 bg-linear-to-br from-yellow-300/10 via-violet-500/10 to-cyan-400/10 p-8 text-center shadow-[0_30px_120px_rgba(0,0,0,0.35)] sm:p-12">
             <div className="absolute -left-10 top-0 h-40 w-40 rounded-full bg-yellow-300/15 blur-3xl" />
             <div className="absolute -right-10 bottom-0 h-44 w-44 rounded-full bg-violet-500/15 blur-3xl" />
             <div className="mx-auto mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-white backdrop-blur">
